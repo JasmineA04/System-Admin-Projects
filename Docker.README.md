@@ -83,14 +83,19 @@ services:
       - './logs:/var/log/gitlab'
       - './data:/var/opt/gitlab'
 ````
-## Docker Picture
+### Docker Picture
 - In the document attached to the respository has the picture of sucessfully loging into the GitLab directory and succesfully running it.
-- Giving out the following information; Container ID, Image, Command, when it was Created, Status, If it is Running, Ports, Port mapping and its Name
+- Giving out the following information; Container ID, Image, Command, when it was Created, Status, If it is Running, Ports, Port mapping and its Name 
 
-## Logging into the the GitLab browser:
+### Logging into the the GitLab browser:
 - Using the command of **ip addr** verify the host IP
 - Go into the web browswer and type **http://localhost** #http or https depending on the port
+- Waint 5 to 10 minuts for first time user to configure GitLab with the server
 
+### GitLab Picture
+- The first picture depects the login screen for GitLab after the configuration is completed.
+- The second picture shows what are the figure for GitLab once logged in. 
 
 ## Problem
-- When trying to exectue the command of writing docker-compose.yml an error was showing whenever I was trying to execte the command. The error was that I was writing it on my user account and not in root. I added **sudo** on the command and that resolved it.  
+- When trying to exectue the command of writing docker-compose.yml an error was showing whenever I was trying to execte the command. The error was that I was writing it on my user account and not in root. I added **sudo** on the command and that resolved it.
+- I didn't know that I had to wait for the configuration so I started restarting gitlab multiple times. I then read that I had to wait and let the configuration to be completed. 
